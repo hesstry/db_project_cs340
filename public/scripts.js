@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:5345/";
+const baseUrl = "https://goofy-agnesi-78567a.netlify.app/";
 
 let add_exercise = document.querySelector(".addExerciseForm");
 
