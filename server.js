@@ -8,7 +8,7 @@ const mysql = require('./dbcon.js')
 
 app.use(express.static('public'))
 app.use(express.json())
-app.set('port', 5345)
+app.set('port', 8080)
 
 // Queries
 const tableName = "workouts";
@@ -151,5 +151,5 @@ app.use(function(err, req, res, next){
 });
 
 app.listen(app.get('port'), function(){
-	console.log('Express started on http://localhost:' + app.get('port') + '; press Ctrl-C to terminate.');
+	console.log('Express started on PORT: ' + app.get('port') + '; press Ctrl-C to terminate.');
 });
