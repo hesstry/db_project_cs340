@@ -27,6 +27,7 @@ const createTableQuery = `CREATE TABLE ${tableName}(
 )`;
 
 app.get('/', function(req, res, next){
+	res.set('Access-Control-Allow-Origin', '*');
 	let context = {};
 	console.log("GET REQUEST QUERY: ",req.query);
 	mysql.pool.query(getAllQuery, function(err, rows, fields){
@@ -42,6 +43,7 @@ app.get('/', function(req, res, next){
 });
 
 app.post('/',function(req,res,next){
+	res.set('Access-Control-Allow-Origin', '*');
 	console.log("POST REQUEST BODY: ", req.body);
 	console.log("post request received");
 
@@ -132,6 +134,7 @@ app.post('/',function(req,res,next){
 });
 
 app.get('/reset-table', function(req, res, next) {
+	res.set('Access-Control-Allow-Origin', '*');
 	mysql.pool.query(deleteTableQuery, function(err){
 		mysql.pool.query(createTableQuery, function (err){
 			res.send(`${tableName} TABLE RESET`);
