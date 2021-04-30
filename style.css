@@ -1,0 +1,57 @@
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: 'Courier New', monospace;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  border: solid;
+  border-color: white;
+}
+
+.navbar li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.explanation {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.table_div {
+  text-align: center;
+  padding: 5px;
+  align-content: center;
+  border-style: solid;
+}
+
+.table_div table {
+	margin: 0 auto;
+}
+
+.name:hover {
+  background-color: gray;
+}
+
+.orders tr {
+	border: solid;
+	border-color: white;
+}
