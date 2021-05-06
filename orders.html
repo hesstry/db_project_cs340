@@ -2,54 +2,120 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
-<title>Page Title</title>
+<title>Orders</title>
 <style>
 </style>
 </head>
 <body>
 
-<ul class="navbar">
-  <li><a href="market.html">Market</a></li>
-  <li><a class="active" href="wallet.html">Wallet</a></li>
-  <li><a href="orders.html">Orders</a></li>
-  <li><a href="account.html">Account</a></li>
-</ul>
+  <ul class="navbar">
+    <li><a href="coins.html">Coins</a></li>
+    <li><a href="coin_wallet_junction.html">Coin_Wallet_Junction</a></li>
+    <li><a class="active" href="wallet.html">Wallets</a></li>
+    <li><a href="orders.html">Orders</a></li>
+    <li><a href="customers.html">Customers</a></li>
+  </ul>
 
-<div class="explanation">THIS PAGE WILL BE A HISTORY OF ORDERS MADE WITH THIS WALLET</div>
+<div class="explanation">THIS PAGE WILL BE A HISTORY OF ORDERS MADE WITH WALLETS</div>
+
+<div class="table_div">
+  <table class="coin_wallet_junction">
+    <thead>
+      <tr>
+        <th>SELECT / UPDATE / DELETE FORM</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>
+        <form class="coin_wallet_junction_select">
+          <label for="order_id">Order_id:</label><br>
+          <input type="number" id="order_id" name="order_id"><br>
+          <label for="wallet_id">Wallet_id:</label><br>
+          <input type="number" id="wallet_id" name="wallet_id"><br>
+          <label for="customer_id">Customer_id:</label><br>
+          <input type="number" id="customer_id" name="customer_id"><br>
+          <label for="ticker">Ticker:</label><br>
+          <input type="text" id="ticker" name="ticker"><br>
+          <label for="amount">Amount:</label><br>
+          <input type="number" id="amount" name="amount"><br>
+          <label for="time">Time:</label><br>
+          <input type="datetime-local" id="time" name="time"><br><br>
+          <p>Order Type:
+            <input type="radio" id="buy" name="type" value="0">
+            <label for="buy">Buy</label>
+            <input type="radio" id="sell" name="type" value="1">
+            <label for="sell">Sell</label><br>
+          </p>
+          <p>Completed Status:
+            <input type="radio" id="active" name="completed" value="0">
+            <label for="active">Active</label>
+            <input type="radio" id="completed" name="completed" value="1">
+            <label for="completed">Completed</label><br>
+          </p>
+          <input type="submit" id="SELECT" value="SELECT">
+          <input type="submit" id="DELETE" value="DELETE">
+          <input type="submit" id="DELETE" value="INSERT"><br><br>
+          <input type="checkbox">Select/View All<br>
+        </form>
+      </td>
+    </tr>
+  </table><br>
+</div><br>
+
 
 <div class="table_div">
 <table class="orders">
   <thead>
     <tr>
-      <th>Time</th>
-      <th>Pair</th>
+      <th>Order_id</th>
+      <th>Wallet_id</th>
+      <th>Customer_id</th>
       <th>Type</th>
+      <th>Ticker</th>
       <th>Amount</th>
+      <th>Completed</th>
+      <th>Time</th>
     </tr>
   </thead>
   <tr>
-    <td>2021/04/22 20:40:46</td>
-    <td>BTC/USDT</td>
+    <td>0001</td>
+    <td>0001</td>
+    <td>0020</td>
     <td>Buy</td>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td>2021/04/22 20:40:46</td>
     <td>BTC/USDT</td>
+    <td>1.000000</td>
+    <td>active</td>
+    <td>2021/04/22 20:40:46</td>
+  </tr>
+  <tr>
+    <td>0002</td>
+    <td>0001</td>
+    <td>0020</td>
     <td>Sell</td>
-    <td>.5</td>
+    <td>BTC/USDT</td>
+    <td>0.500000</td>
+    <td>completed</td>
+    <td>2021/04/22 20:40:46</td>
   </tr>
   <tr>
-    <td>2021/04/22 20:40:46</td>
+    <td>0003</td>
+    <td>0002</td>
+    <td>0008</td>
+    <td>Buy</td>
     <td>ETH/USDT</td>
-    <td>BUY</td>
-    <td>3</td>
+    <td>3.000000</td>
+    <td>completed</td>
+    <td>2021/04/22 20:55:46</td>
   </tr>
   <tr>
-    <td>2021/04/22 20:40:46</td>
+    <td>0004</td>
+    <td>0005</td>
+    <td>0010</td>
+    <td>Sell</td>
     <td>ETH/USDT</td>
-    <td>SELL</td>
-    <td>1.5</td>
+    <td>1.500000</td>
+    <td>active</td>
+    <td>2021/04/22 24:03:46</td>
 </table>
 </div>
 

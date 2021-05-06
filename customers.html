@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>Page Title</title>
+<style>
+.login_prompt {
+  border-style: solid;
+  margin: 30%;
+  padding-bottom: 10px;
+}
+
+.account_num, .submit {
+	position: inline;
+    margin-top:3%;
+    background-color: black;
+    border-color: white;
+    font-family: 'Courier New', monospace;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+  <ul class="navbar">
+    <li><a href="coins.html">Coins</a></li>
+    <li><a href="coin_wallet_junction.html">Coin_Wallet_Junction</a></li>
+    <li><a class="active" href="wallet.html">Wallets</a></li>
+    <li><a href="orders.html">Orders</a></li>
+    <li><a href="customers.html">Customers</a></li>
+  </ul>
+
+<div class="explanation">THIS IS THE CUSTOMERS PAGE WITH TABLE OF ALL CUSTOMERS</div>
+
+<div class="table_div">
+  <table class="market">
+    <thead>
+      <tr>
+        <th>INSERT FORM</th>
+      </tr>
+    </thead>
+      <tr>
+        <td>
+          <form>
+            <label for="customer_id">Customer Id:</label><br>
+            <input type="number" id="customer_id"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email"><br>
+            <label for="password">Password:</label><br>
+            <input type="text" id="password"><br>
+            <label for="phone_number">Balance:</label><br>
+            <input type="phone_number" id="phone_number"><br>
+            <label for="trading_password">Trading Password:</label><br>
+            <input type="text" id="trading_password"><br>
+            <input type="button" value="INSERT">
+          </form>
+        </td>
+      </tr>
+    </thead>
+  </table>
+</div>
+
+<br>
+
+<div class="table_div">
+  <table class="customers">
+    <thead>
+        <tr>
+            <th>customer_id</th>
+            <th>email</th>
+            <th>password</th>
+            <th>phone_number</th>
+            <th>trading_password</th>
+        </tr>
+    </thead>
+        <tr>
+            <td class="customer_id">1</td>
+            <td class="email">anon1@anon.com</td>
+            <td class="password">anon1pass</td>
+            <td class="phone_number">1234567890</td>
+            <td class="trading_password">1234</td>
+        </tr>
+        <tr>
+            <td class="customer_id">2</td>
+            <td class="email">anon2@anon.com</td>
+            <td class="password">anon2pass</td>
+            <td class="phone_number">1234567890</td>
+            <td class="trading_password">1234</td>
+        </tr>
+        <tr>
+            <td class="customer_id">3</td>
+            <td class="email">anon3@anon.com</td>
+            <td class="password">anon3pass</td>
+            <td class="phone_number">1234567890</td>
+            <td class="trading_password">1234</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
