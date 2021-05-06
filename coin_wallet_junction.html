@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>Coin_Wallet_Junction</title>
+<style>
+</style>
+</head>
+<body>
+
+  <ul class="navbar">
+    <li><a href="coins.html">Coins</a></li>
+    <li><a href="coin_wallet_junction.html">Coin_Wallet_Junction</a></li>
+    <li><a class="active" href="wallet.html">Wallets</a></li>
+    <li><a href="orders.html">Orders</a></li>
+    <li><a href="customers.html">Customers</a></li>
+  </ul>
+
+<div class="explanation">THIS PAGE IS THE CONNECTION BETWEEN WALLETS AND COINS</div>
+
+<div class="table_div">
+  <table class="coin_wallet_junction">
+    <thead>
+      <tr>
+        <th>SELECT FORM</th>
+        <th></th>
+        <th colspan="2">INSERT FORM</th>
+        <th></th>
+        <th>DELETE FORM</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>
+        <form class="coin_wallet_junction_select">
+          <label for="wallet_id">Wallet_id:</label><br>
+          <input type="number" id="wallet_id" name="wallet_id"><br>
+          <label for="ticker">Ticker:</label><br>
+          <input type="ticker" id="ticker" name="ticker"><br><br>
+          <input type="checkbox">Select/View All<br><br>
+          <input type="submit" id="SELECT" value="SELECT">
+        </form>
+      </td>
+      <td>
+        <form class="coin_wallet_junction_insert">
+          <td>
+            <label for="wallet_id">Wallet_id:</label><br>
+            <input type="number" id="wallet_id" name="wallet_id"><br>
+            <label for="customer_id">Customer_id:</label><br>
+            <input type="number" id="customer_id" name="customer_id"><br>
+            <label for="ticker">Ticker:</label><br>
+            <input type="text" id="ticker" name="ticker"><br>
+            <label for="balance">Balance:</label><br>
+            <input type="number" id="balance" name="balance"><br>
+          </td>
+          <td>
+            <label for="ticker">Ticker:</label><br>
+            <input type="text" id="ticker" name="ticker"><br>
+            <label for="price">Price:</label><br>
+            <input type="number" id="price" name="price"><br>
+            <label for="chance_24hr">Change_24hr:</label><br>
+            <input type="number" id="change_24hr" name="change_24hr">
+            <br><br>
+            <input type="submit" id="INSERT" value="INSERT">
+          </td>
+          <td></td>
+        </form>
+      </td>
+      <td>
+        <form class="coin_wallet_junction_delete">
+          <label for="wallet_id">Wallet_id:</label><br>
+          <input type="number" id="wallet_id" name="wallet_id"><br>
+          <label for="ticker">Ticker:</label><br>
+          <input type="ticker" id="ticker" name="ticker">
+          <br><br><br><br>
+          <input type="submit" id="DELETE" value="DELETE">
+        </form>
+      </td>
+    </tr>
+  </table><br>
+</div><br>
+
+<div class="table_div">
+<table class="coin_wallet_junction">
+  <thead>
+    <tr>
+      <th>Wallet_id</th>
+      <th>Ticker</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>00001</td>
+    <td>BTC/USDT</td>
+  </tr>
+  <tr>
+    <td>00002</td>
+    <td>BTC/USDT</td>
+  </tr>
+  <tr>
+    <td>00003</td>
+    <td>ETH/USDT</td>
+  </tr>
+  <tr>
+    <td>00004</td>
+    <td>BTC/USDT</td>
+  </tr>
+</table>
+</div>
+
+</body>
+</html>

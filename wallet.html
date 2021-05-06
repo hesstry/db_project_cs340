@@ -9,38 +9,71 @@
 </head>
 <body>
 
-<ul class="navbar">
-  <li><a href="market.html">Market</a></li>
-  <li><a class="active" href="wallet.html">Wallet</a></li>
-  <li><a href="orders.html">Orders</a></li>
-  <li><a href="account.html">Account</a></li>
-</ul>
+  <ul class="navbar">
+    <li><a href="coins.html">Coins</a></li>
+    <li><a href="coin_wallet_junction.html">Coin_Wallet_Junction</a></li>
+    <li><a class="active" href="wallet.html">Wallets</a></li>
+    <li><a href="orders.html">Orders</a></li>
+    <li><a href="customers.html">Customers</a></li>
+  </ul>
 
 <div class="explanation">THIS PAGE WILL BE A WALLET OVERVIEW FOR ACCOUNT</div>
+
+<div class="table_div">
+  <table class="market">
+    <thead>
+      <tr>
+        <th>INSERT FORM</th>
+      </tr>
+    </thead>
+      <tr>
+        <td>
+          <form>
+            <label for="wallet_id">Wallet Id:</label><br>
+            <input type="number" id="wallet_id"><br>
+            <label for="customer_id">Customer Id:</label><br>
+            <input type="number" id="customer_id"><br>
+            <label for="ticker">Ticker:</label><br>
+            <input type="text" id="ticker"><br>
+            <label for="balance">Balance:</label><br>
+            <input type="text" id="balance"><br>
+            <input type="button" value="INSERT">
+          </form>
+        </td>
+      </tr>
+    </thead>
+  </table>
+</div>
+
+<br>
 
 <div class="table_div">
 <table class="wallet">
     <thead>
         <tr>
-            <th>Coin</th>
-            <th>Balance</th>
-            <th>$ Value</th>
+            <th>wallet_id</th>
+            <th>customer_id</th>
+            <th>ticker</th>
+            <th>balance</th>
         </tr>
     </thead>
         <tr>
-            <td class="name">Bitcoin</td>
-            <td>1</td>
-            <td>$60000</td>
+            <td class="wallet_id">1</td>
+            <td class="customer_id">1</td>
+            <td class="ticker">BTC</td>
+            <td class="balance">1</td>
         </tr>
         <tr>
-            <td class="name">Ethereum</td>
-            <td>1</td>
-            <td>$3000</td>
+            <td class="wallet_id">1</td>
+            <td class="customer_id">1</td>
+            <td class="ticker">ETH</td>
+            <td class="balance">1</td>
         </tr>
         <tr>
-            <td class="name">Binance Coin</td>
-            <td>1</td>
-            <td>$600</td>
+            <td class="wallet_id">2</td>
+            <td class="customer_id">2</td>
+            <td class="ticker">ETH</td>
+            <td class="balance">1</td>
         </tr>
     </table>
 </div>
